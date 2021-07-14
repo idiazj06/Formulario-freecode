@@ -1,15 +1,22 @@
 
 
-:root{
-    --color-white: #f3f3f3;
-    --color-darkblue: #1b1b32;
-    --color-white: rgba(27, 27, 50, 0.8)  ;
-    --color-green: #37af65;
-}
 
 header{
     line-height: 20px;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Antic Slab', serif;
+    color: rgb(177, 177, 177);
+    border-radius: 10%;
+    border-color: black;
+    text-shadow: black;
+}
+
+head{
+  line-height: 20px;
+  font-family: 'Antic Slab', serif;
+  border-radius: 30px;
+  border-color: black;
+  text-shadow: black;
+  
 }
 
 body{
@@ -27,6 +34,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  align-items: center;
     
 }
 .style{
@@ -49,8 +57,8 @@ form{
   margin: 20px auto 15px auto;
   height: 2.375rem;
   padding: 0.375rem 0.75rem;
-  color: var(--color-white);
-  background-color: gray;
+  color: gray;
+  background-color: whitesmoke;
   background-clip: padding-box;
   border: 2px solid grey;
   border-radius: 0.25rem;
@@ -85,7 +93,7 @@ main{
   width: 20%;
   margin: 15px 5px 5px 20px ;
   padding: 0.75rem;
-  background: green;
+  background: rgb(11, 212, 11);
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
