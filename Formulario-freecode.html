@@ -1,0 +1,171 @@
+<html>
+    <head>
+    <div class="container">
+        <header class=header>
+            <h1 id="title" class="text-center">Encuesta de funcionamiento</h1>
+            <p id="description" class="description-text-center">Gracias por tomar el tiempo para respoder esta breve encuesta</p>
+        </header>
+    </head>
+    <body>
+        
+        <form id="survey-forms">
+            <div class="form-groups">
+                <label id="label-name" for="name">
+                    Nombre
+                </label>
+                    <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Ingresa tu Nombre"
+                        required
+                    />
+            </div>
+
+            <div class="form-groups">
+                <label id="label-email" for="email">
+                    Email
+                </label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Ingresa tu email"
+                        required
+                    />
+            </div>
+
+            <div class="form-groups">
+                <label id="label-number" for="number">                
+                    Edad
+                </label>
+                    <input
+                        type="number"
+                        name="age"
+                        id="number"
+                        min="17"
+                        max="100"
+                        class="form-control"
+                        placeholder="Ingresa tu edad"
+                        required
+                    />
+            </div>
+
+            <div class="form-groups">
+                  <p>
+                      ¿Cual es tu ocupación?
+                  </p>
+                  <select id="dropdown" name="ocupation" class="form-control" required>
+                  <option disabled selected value>Selecciona tu ocupación</option>
+                  <option value="student">Estudiante medio tiempo</option>
+                  <option value="learner">Estudiante tiempo completo</option>
+                  <option value="job">Trabajo tiempo completo</option>
+                  <option value="preferNo">Prefiero no decirlo</option>
+                  <option value="other">Otro</option>
+                  </select>
+            </div>
+              
+            <div class="form-groups">
+              <p>¿Recomendarias Academia Geek a un amigo?</p>
+              <label>
+                <input
+                    type="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                />Definitivamente</label>
+              <label>
+                <input
+                    type="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                />Quizas</label>
+              <label>
+                <input
+                    type="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                />No estoy seguro</label>              
+            </div>
+
+            <div class="form-control">
+               " <p>
+                    ¿Qué te parecio mas atractivo de Academia Geek?
+                </p>
+                <select id="most-like" name="most-like" class="form-control" required>
+                    <option disabled selected value>Selecciona una opción</option>
+                    <option value="challenges">Desafios</option>
+                    <option value="projects">Proyectos</option>
+                    <option value="studyModes">Modos de estudio</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-groups">
+                <p>
+                    ¿Qué te gustaria que mejoraramos?
+                    <span class="clue">(Seleccione todas las opciones que crea conveniente)</span>
+                </p>
+                <label>
+                    <input
+                        name="prefer"
+                        value="tutorials"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Tutorias
+                </label>        
+                <label>
+                    <input
+                        name="prefer"
+                        value="supportMaterial"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Material de apoyo
+                </label>
+                <label>
+                    <input
+                        name="prefer"
+                        value="time"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Horarios
+                </label>
+                <label>
+                    <input
+                        name="prefer"
+                        value="support"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Atencion al estudiante
+                </label>
+                 
+            </div>
+
+            <div class="form-groups">
+                <p>¿Tienes algun comentario o sugerencia adicional?</p>
+                
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Ingresa tu comentario o sugerencia aqui...">
+                </textarea>           
+            </div>
+            <div class="form-groups">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
+            </div>
+
+        </form>
+    </div>
+    </body>
+
+</html>
