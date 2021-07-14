@@ -7,34 +7,93 @@
     --color-green: #37af65;
 }
 
+header{
+    line-height: 20px;
+    font-family: 'Lato', sans-serif; 
+}
+
 body{
     font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-size: 19px;
     line-height: 1.3px;
     margin: 10px auto;
-    background-color: transparent;
+    background-color: whitesmoke;
     text-align: center;
+    background-image: linear-gradient(
+      115deg,
+      rgba(158, 103, 58, 0.8),
+      rgba(46, 46, 42, 0.548)
+    ), url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+    
 }
 .style{
-    background-color: darkgoldenrod;
+    background-color: transparent;
     height: auto;
     width: auto;
     border-radius: 12px;
 }
 
 form{
-    text-align: center;
-    background-color: transparent;
-    margin: 40 auto 40 auto;
-    padding: 15px;
+    background: transparent;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
     font-family: 'Lato', sans-serif;
-    
 }
 
+.form-control {
+  dislpay:block;
+  width: 100%;
+  margin: 20px auto 15px auto;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: var(--color-white);
+  background-color: gray;
+  background-clip: padding-box;
+  border: 2px solid grey;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+div{
+  align: center;
+  width: 70%;
+  margin-left:auto;
+  margin-right: auto;
+  color: var(--color-white)
+}
+
+span{
+  font-size: 12px;
+}
+
+
+title{
+    font-size: 40px;
+ }
 input{
     margin: 15px 5px 5px 20px ;
 }
 
+main{
+    background-color: lightgray
+}
 
+.submit-button {
+  width: 20%;
+  margin: 15px 5px 5px 20px ;
+  padding: 0.75rem;
+  background: green;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
 
-
+.input-textarea {
+  min-height: 60px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}

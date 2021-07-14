@@ -13,6 +13,7 @@
     <title>Document</title>
 </head>
 <body>
+   <script src="script.js"></script>
     
     <div class="container">
         <header class=header>
@@ -21,9 +22,9 @@
         </header>
     
     
-        
+   <main>      
         <form id="survey-form">
-            <div class="form-groups">
+            <div class="form-group">
                 <label id="name-label" for="name">
                     Nombre
                 </label>
@@ -37,7 +38,7 @@
                     />
             </div>
 
-            <div class="form-groups">
+            <div class="form-group">
                 <label id="email-label" for="email">
                     Email
                 </label>
@@ -51,7 +52,7 @@
                     />
             </div>
 
-            <div class="form-groups">
+            <div class="form-group">
                 <label id="number-label" for="number">                
                     Edad
                 </label>
@@ -67,7 +68,7 @@
                     />
             </div>
 
-            <div class="form-groups">
+            <div class="form-group">
                   <p>
                       ¿Cual es tu ocupación?
                   </p>
@@ -81,7 +82,7 @@
                   </select>
             </div>
               
-            <div class="form-groups">
+            <div class="form-group">
               <p>¿Recomendarias Academia Geek a un amigo?</p>
               <label>
                 <input
@@ -109,7 +110,7 @@
                 />No estoy seguro</label>              
             </div>
 
-            <div class="form-control">
+            <div class="form-group">
                " <p>
                     ¿Qué te parecio mas atractivo de Academia Geek?
                 </p>
@@ -122,7 +123,7 @@
                 </select>
             </div>
 
-            <div class="form-groups">
+            <div class="form-group">
                 <p>
                     ¿Qué te gustaria que mejoraramos?
                     <span class="clue">(Seleccione todas las opciones que crea conveniente)</span>
@@ -162,24 +163,30 @@
                  
             </div>
 
-            <div class="form-groups">
+            <div class="form-group">
                 <p>¿Tienes algun comentario o sugerencia adicional?</p>
                 
                     <textarea
                     id="comments"
                     class="input-textarea"
                     name="comment"
-                    placeholder="Ingresa tu comentario o sugerencia aqui...">
-                </textarea>           
+                    placeholder="Ingresa tu comentario o sugerencia aqui..."
+              
+            ></textarea>           
             </div>
-            <div class="form-groups">
+            <div class="form-group">
                 <button type="submit" id="submit" class="submit-button">
                     Enviar
                 </button>
             </div>
 
         </form>
+
     </div>
-    </body>
+
+    
+
+   </main>
+</body>
 
 </html>
