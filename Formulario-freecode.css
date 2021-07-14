@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 
 :root{
     --color-white: #f3f3f3;
@@ -14,7 +14,7 @@
 }
 
 body{
-    font-family: 'Lato', Georgia;
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
@@ -69,7 +69,7 @@ button,
 select,
 textarea{
     margin: 0;
-    font-family: inherit;
+    font-family: 'Lato', italic;
     font-size: inherit;
     line-height: inherit;
 }
@@ -112,13 +112,47 @@ button{
     text-shadow: 0, 0, 0, 2;
 }
 
+.clue{
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
 .text-center{
     text-align: center;
 }
 
-.form-groups{
+/*form*/
 
+.form{
+    background: var(--color-darkblue);
+    padding: 2.5rem 6.25rem;
+    border-radius: 0.25rem;
 }
+
+@media (min-width:480px) {
+    .container{
+        paddin: 2.5rem;
+    }
+}
+
+.form-groups {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
 
 #label-name{
 
