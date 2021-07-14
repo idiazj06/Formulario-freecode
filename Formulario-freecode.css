@@ -42,6 +42,59 @@ body::before{
         
 }
 
+h1{
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p{
+    font-size: 13px;
+}
+
+h1,
+    p{
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+label{
+    display:flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button{
+    border: 1px;    
+}
+
+.container{
+    width: 100%;
+    margin: 312px auto 0 auto;
+}
+
+@media (min-width: 600px) {
+    .container{
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 800px) {
+    .container{
+        max-width: 760px;
+    }
+}
+
 .header{
     padding: 0 20%;
     margin-bottom: 1.7px;
