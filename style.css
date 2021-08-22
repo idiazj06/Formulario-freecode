@@ -1,99 +1,116 @@
-header {
-    line-height: 20px;
-    font-family: 'Antic Slab', serif;
-    color: rgb(177, 177, 177);
-    border-radius: 10%;
-    border-color: black;
-    text-shadow: black;
+*{
+    margin:0;
+    top:0;
+    left:0;
+    padding:0
 }
 
-head {
-    line-height: 20px;
-    font-family: 'Antic Slab', serif;
-    border-radius: 30px;
-    border-color: black;
-    text-shadow: black;
-}
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 19px;
-    line-height: 1.3px;
-    margin: 10px auto;
-    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    width: 50%;
+    padding: 10px;
+    font-family: 'Antic Slab', serif;
+    background-color: rgba(250, 235, 215, 0.418);
+    border-radius:10px
+    
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-image: linear-gradient( 115deg, rgba(158, 103, 58, 0.8), rgba(46, 46, 42, 0.548)), url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+    padding:50px 0;
+    background-color: rgba(250, 235, 215, 0.897);
+    background-image: linear-gradient( 90deg, rgba(250, 235, 215, 0.644), rgba(0, 0, 0, 0.589)), url(https://justdigital.agency/wp-content/uploads/2017/09/pair-programing-main-1024x572.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    align-items: center;
-}
-
-.style {
-    background-color: transparent;
-    height: auto;
-    width: auto;
-    border-radius: 12px;
-}
-
-form {
-    background: transparent;
-    padding: 2.5rem 0.625rem;
-    border-radius: 0.25rem;
-    font-family: 'Lato', sans-serif;
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    margin: 20px auto 15px auto;
-    height: 2.375rem;
-    padding: 0.375rem 0.75rem;
-    color: gray;
     background-color: whitesmoke;
-    background-clip: padding-box;
-    border: 2px solid grey;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-attachment: fixed;
 }
 
-div {
-    align: center;
+#survey-form{
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    color: black
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    background:rgba(250, 235, 215, 0.836);
+    margin-top:10px;
+    border-radius:20px;
 }
 
-span {
-    font-size: 12px;
-}
-
-title {
-    font-size: 40px;
-}
-
-input {
-    margin: 15px 5px 5px 20px;
-}
-
-main {
-    background-color: lightgray
-}
-
-.submit-button {
-    width: 20%;
-    margin: 15px 5px 5px 20px;
-    padding: 0.75rem;
-    background: rgb(11, 212, 11);
-    color: inherit;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.input-textarea {
-    min-height: 60px;
+.form-group{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 0.625rem;
-    resize: vertical;
+}
+
+input,select,textarea{
+    width:90%;
+    margin:auto;
+}
+
+.laterales{
+    width:100%;
+    display: flex;
+    justify-content: start;    
+    text-align: left;
+}
+
+.laterales input{
+    width: 10%;
+    padding:0
+}
+.laterales p{
+    width: 100%;
+}
+
+.laterales .titulo-label{
+    width: 100%;
+    text-align: center;
+}
+label{
+    padding:5px;
+    font-size:20px;
+    font-family: 'Antic Slab', serif;
+}
+
+input{
+    padding:10px;
+    border-radius:5px;
+}
+
+select{
+    padding:10px;
+    border-radius:5px;
+}
+
+p{
+    padding:5px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.clue{
+    font-size:12px
+}
+
+button{
+    padding:10px;
+    width:30%;
+    margin: auto;
+    background-color:rgb(63, 205, 50);
+    border-radius:10px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.295);
 }

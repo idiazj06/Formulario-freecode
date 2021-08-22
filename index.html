@@ -1,200 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <title>Formulario</title>
 </head>
+
 <body>
-   <script src="script.js"></script>
-    
+
+
     <div class="container">
         <header class=header>
             <h1 id="title" class="text-center">Encuesta de funcionamiento</h1>
-            <p id="description" class="description-text-center">Gracias por tomar el tiempo para respoder esta breve encuesta</p>
+            <p id="description" class="description-text-center">Gracias por tomar el tiempo para respoder esta breve
+                encuesta</p>
         </header>
-    
-    
-   <main>      
-        <form id="survey-form">
-            <div class="form-group">
-                <label id="name-label" for="name">
-                    Nombre
-                </label>
-                    <input 
-                        type="text"
-                        name="name"
-                        id="name"
-                        class="form-control"
-                        placeholder="Ingresa tu Nombre"
-                        required
-                    />
-            </div>
 
-            <div class="form-group">
-                <label id="email-label" for="email">
-                    Email
-                </label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        class="form-control"
-                        placeholder="Ingresa tu email"
-                        required
-                    />
-            </div>
 
-            <div class="form-group">
-                <label id="number-label" for="number">                
-                    Edad
-                </label>
-                    <input
-                        type="number"
-                        name="age"
-                        id="number"
-                        min="17"
-                        max="100"
-                        class="form-control"
-                        placeholder="Edad"
-                        required
-                    />
-            </div>
+        <main>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu Nombre"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad</label>
+                    <input type="number" name="age" id="number" min="17" max="100" class="form-control"
+                        placeholder="Edad" required />
+                </div>
+                <div class="form-group">
+                    <p>¿Cual es tu ocupación?</p>
+                    <select id="dropdown" name="ocupation" class="form-control" required>
+                        <option disabled selected value>Selecciona tu ocupación</option>
+                        <option value="student">Estudiante medio tiempo</option>
+                        <option value="learner">Estudiante tiempo completo</option>
+                        <option value="job">Trabajo tiempo completo</option>
+                        <option value="preferNo">Prefiero no decirlo</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group laterales">
+                    <p class="titulo-label">¿Recomendarias Academia Geek a un amigo?</p>
+                    <div class="laterales">
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
+                        <p>Definitivamente</p>
+                    </div>
 
-            <div class="form-group">
-                  <p>
-                      ¿Cual es tu ocupación?
-                  </p>
-                  <select id="dropdown" name="ocupation" class="form-control" required>
-                  <option disabled selected value>Selecciona tu ocupación</option>
-                  <option value="student">Estudiante medio tiempo</option>
-                  <option value="learner">Estudiante tiempo completo</option>
-                  <option value="job">Trabajo tiempo completo</option>
-                  <option value="preferNo">Prefiero no decirlo</option>
-                  <option value="other">Otro</option>
-                  </select>
-            </div>
-              
-            <div class="form-group">
-              <p>¿Recomendarias Academia Geek a un amigo?</p>
-              <label>
-                <input
-                    name="user-recommend"
-                    value="definitely"
-                    type="radio"
-                    class="input-radio"
-                    checked
-                />Definitivamente</label>
-              <label>
-                <input
-                    name="user-recommend"
-                    value="maybe"
-                    type="radio"
-                    class="input-radio"
-                    checked
-                />Quizas</label>
-              <label>
-                <input
-                    name="user-recommend"
-                    value="not-sure"
-                    type="radio"
-                    class="input-radio"
-                    checked
-                />No estoy seguro</label>              
-            </div>
+                    <div class="laterales">
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" checked />
+                        <p>Quizas</p>
+                    </div>
 
-            <div class="form-group">
-               " <p>
-                    ¿Qué te parecio mas atractivo de Academia Geek?
-                </p>
-                <select id="most-like" name="most-like" class="form-control" required>
-                    <option disabled selected value>Selecciona una opción</option>
-                    <option value="challenges">Desafios</option>
-                    <option value="projects">Proyectos</option>
-                    <option value="studyModes">Modos de estudio</option>
-                    
-                </select>
-            </div>
+                    <div class="laterales">
+                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio" checked />
+                        <p>No estoy seguro</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>¿Qué te parecio mas atractivo de Academia Geek?</p>
+                    <select id="most-like" name="most-like" class="form-control" required>
+                        <option disabled selected value>Selecciona una opción</option>
+                        <option value="challenges">Desafios</option>
+                        <option value="projects">Proyectos</option>
+                        <option value="studyModes">Modos de estudio</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p class="titulo-label">
+                        ¿Qué te gustaria que mejoraramos?
+                        <span class="clue">(Seleccione todas las opciones que crea conveniente)</span>
+                    </p>
 
-            <div class="form-group">
-                <p>
-                    ¿Qué te gustaria que mejoraramos?
-                    <span class="clue">(Seleccione todas las opciones que crea conveniente)</span>
-                </p>
-                <label>
-                    <input
-                        name="prefer"
-                        value="tutorials"
-                        type="checkbox"
-                        class="input-checkbox" />
-                        Tutorias
-                </label>        
-                <label>
-                    <input
-                        name="prefer"
-                        value="supportMaterial"
-                        type="checkbox"
-                        class="input-checkbox" />
-                        Material de apoyo
-                </label>
-                <label>
-                    <input
-                        name="prefer"
-                        value="time"
-                        type="checkbox"
-                        class="input-checkbox" />
-                        Horarios
-                </label>
-                <label>
-                    <input
-                        name="prefer"
-                        value="support"
-                        type="checkbox"
-                        class="input-checkbox" />
-                        Atencion al estudiante
-                </label>
-                 
-            </div>
+                    <div class="laterales">
+                        <input name="prefer" value="tutorials" type="checkbox" class="input-checkbox" />
+                        <p>Tutorias</p>
+                    </div>
 
-            <div class="form-group">
-                <p>¿Tienes algun comentario o sugerencia adicional?</p>
-                
-                    <textarea
-                    id="comments"
-                    class="input-textarea"
-                    name="comment"
-                    placeholder="Ingresa tu comentario o sugerencia aqui..."
-              
-            ></textarea>           
-            </div>
-            <div class="form-group">
-                
-                <button type="submit" id="submit" class="submit-button">
-                    Enviar
-                </button>
-            </div>
+                    <div class="laterales">
+                        <input name="prefer" value="supportMaterial" type="checkbox" class="input-checkbox" />
+                        <p>Material de apoyo</p>
+                    </div>
 
-        </form>
+                    <div class="laterales">
+                        <input name="prefer" value="time" type="checkbox" class="input-checkbox" />
+                        <p>Horarios</p>
+                    </div>
+
+                    <div class="laterales">
+                        <input name="prefer" value="support" type="checkbox" class="input-checkbox" />
+                        <p>Atencion al estudiante</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>¿Tienes algun comentario o sugerencia adicional?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Ingresa tu comentario o sugerencia aqui..." rows="10" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Enviar
+                    </button>
+                </div>
+            </form>
 
     </div>
 
-    
 
-   </main>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
